@@ -1,0 +1,4 @@
+kubectl create service nodeport \
+vote --tcp=80 \
+--node-port=30100 \
+--dry-run -o yaml | tee vote-svc.yaml

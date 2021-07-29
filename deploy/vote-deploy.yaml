@@ -1,0 +1,5 @@
+kubectl create deployment vote \
+--image=schoolofdevops/vote \
+--replicas=4 \
+--port=80 \
+--dry-run=client -o yaml | tee vote-deploy.yaml
